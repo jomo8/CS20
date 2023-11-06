@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medford Animal Rescue - Adoption Application </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="animals, adopt">
+    <link rel="stylesheet" type="text/css" href="styles/global-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/forms-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/support-styles.css">
+    <script src="./scripts/Adopt-form.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">
+            <img src="images/logo.svg" alt="Medford Animal Rescue">
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About us</a></li>
+                <li><a href="./Support.html">Support us</a></li>
+                <li><a class="curr-page-nav">Adoption</a>
+                    <ul>
+                        <li><a href="./Cats.html">Cats for adoption</a></li>
+                        <li><a href="./Dogs.html">Dogs for adoption</a></li>
+                        <li><a class="curr-page-nav">Adoption application</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Apply to adopt!</h1>
+    <div class="row">
+        <div class="form-container">
+            <form id="adopt-form">
+                <div class="long-col">
+                    <label for="name">
+                        Name: <span class="req-field">*</span>
+                    </label>
+                    <input type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required>
+                </div>
+
+                <div class="long-col">
+                    <label for="email">
+                        E-mail: <span class="req-field">*</span>
+                    </label>
+                    <input type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required>
+                </div>
+
+
+                <div class="long-col">
+                    <label for="number">
+                        Phone Number: <span class="req-field">*</span>
+                    </label>
+                    <input type="tel"
+                            id="number"
+                            name="number"
+                            required
+                            pattern="\d{10}">
+
+                </div>
+
+                <div class="row">
+                    <div class="half-col">
+                        <label for="address">
+                            Street address: <span class="req-field">*</span>
+                        </label>
+                        <input type="text"
+                                id="address"
+                                name="address"
+                                autocomplete="address-line1"
+                                required>
+                    </div>
+                    <div class="half-col">
+                        <label for="city">
+                            City: <span class="req-field">*</span>
+                        </label>
+                        <input type="text"
+                                id="city"
+                                name="city"
+                                autocomplete="address-level2"
+                                required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="half-col">
+                        <label for="state">
+                            State: <span class="req-field">*</span>
+                        </label>
+                        <input type="text"
+                                id="state"
+                                name="state"
+                                autocomplete="address-level1"
+                                required>
+                    </div>
+                    <div class="half-col">
+                        <label for="zipcode">
+                            Zip Code: <span class="req-field">*</span>
+                        </label>
+                        <input type="text"
+                                id="zipcode"
+                                name="zipcode"
+                                autocomplete="postal-code"
+                                required
+                                pattern="\d{5}">
+                    </div>
+                </div>
+
+                <br><br>
+
+                <label for="catsdogs">
+                    Which dog/cat are you interested in?
+                    <span class="req-field">*</span>
+                </label>
+                <select name="catsdogs" id="catsdogs" required>
+                    <option value="" disabled selected hidden> Select</option>
+                    <optgroup label="Dogs">
+                        <option value="dog1">Giorgio</option>
+                        <option value="dog2">Jolanda</option>
+                        <option value="dog3">Rowdy</option>
+                        <option value="dog4">JLo</option>
+                        <option value="dog5">Stephanie</option>
+                        <option value="dog6">Sherman</option>
+                        <option value="dog7">Diesel</option>
+                        <option value="dog8">Teddy</option>
+                    </optgroup>
+                    <optgroup label="Cats">
+                        <option value="cat1">Vladimir Purtin</option>
+                        <option value="cat2">Pascal</option>
+                        <option value="cat3">Karl</option>
+                        <option value="cat4">Candy</option>
+                        <option value="cat5">Trailmix</option>
+                        <option value="cat6">Whiskers</option>
+                        <option value="cat7">Mr. Buttons</option>
+                        <option value="cat8">Tarzan</option>
+                    </optgroup>
+                </select>
+
+
+                <div class="row">
+                    <label for="numpets">
+                        Number of indoor cat(s)/dog(s):
+                        <span class="req-field">*</span>
+                    </label>
+                    <br>
+                    <input type="text"
+                            id="numpets"
+                            name="numpets"
+                            value="0"
+                            required>
+                    <br>
+                </div>
+
+                <p>Are the other pets in your household spayed/neutered?</p>
+                <input type="radio"
+                        name="petsSpayedChoice"
+                        id="petsSpayedChoice-yes">
+                <label for="petsSpayedChoice-yes">Yes</label>
+                <input type="radio"
+                        name="petsSpayedChoice"
+                        id="petsSpayedChoice-no"
+                        checked>
+                <label for="petsSpayedChoice-no">No</label>
+
+                <br><br>
+
+                <p>Do you or anyone in your house have any known allergies to
+                    cats/dogs?</p>
+                <input type="radio"
+                        name="allergyChoice"
+                        id="allergyChoice-yes">
+                <label for="allergyChoice-yes">Yes</label>
+                <input type="radio"
+                        name="allergyChoice"
+                        id="allergyChoice-no"
+                        checked>
+                <label for="allergyChoice-no">No</label>
+
+                <br><br>
+
+                <p>Have you owned a cat/dog before?</p>
+                <input type="radio"
+                        name="priorPetChoice"
+                        id="priorPetChoice-yes">
+                <label for="priorPetChoice-yes">Yes</label>
+                <input type="radio"
+                        name="priorPetChoice"
+                        id="priorPetChoice-no"
+                        checked>
+                <label for="priorPetChoice-no">No</label>
+                <br><br>
+
+                <p>Do you have a fenced-in area on your property?</p>
+                <input type="radio"
+                        name="fenceChoice"
+                        id="fenceChoice-yes"
+                        checked>
+                <label for="fenceChoice-yes">Yes</label>
+                <input type="radio"
+                        name="fenceChoice"
+                        id="fenceChoice-no">
+                <label for="fenceChoice-no">No</label>
+
+                <br><br><br>
+
+                <label for="Ques1">
+                    If you have no fence, how do you plan to have your new
+                    cat/dog relieve themselves?
+                </label>
+                <br>
+                <input type="text" id="Ques1" name="Ques1" value="">
+
+                <br><br>
+
+                <label for="Ques2">
+                    How many hours each day will your cat/dog be alone?
+                    <span class="req-field">*</span>
+                </label>
+                <input type="text" id="Ques2" name="Ques2" value="" required>
+
+                <br><br>
+
+                <p>Do all adults work full time?</p>
+                <input type="radio"
+                        name="workChoice"
+                        id="workChoice-yes"
+                        checked>
+                <label for="workChoice-yes">Yes</label>
+                <input type="radio"
+                        name="workChoice"
+                        id="workChoice-no">
+                <label for="workChoice-no">No</label>
+
+                <br><br>
+
+                <label for="Ques3">
+                    Where will your cat/dog be kept when it is alone?
+                    <span class="req-field">*</span>
+                </label>
+                <br>
+                <input type="text" id="Ques3" name="Ques3" value="" required>
+
+                <br><br>
+
+                <label for="Ques4">
+                    Where will your cat/dog sleep at night?
+                    <span class="req-field">*</span>
+                </label>
+                <br>
+                <input type="text" id="Ques4" name="Ques4" value="" required>
+
+                <br><br>
+
+                <label for="Ques5">
+                    Is there any additional information you wish to share about
+                    your home or the type of cat/dog you are looking for?
+                </label>
+                <br>
+                <textarea type="text" id="Ques5" name="Ques5" value=""></textarea>
+
+                <br><br>
+
+                <button class="orange-button" id="abopt-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="sideBanner">
+            <img id="sideBannerImg" src="./images/banner_4.jpg">
+        </div>
+    </div>
+    <footer>
+        <table>
+            <tr>
+                <th><a href="./About.html">About</a></th>
+                <th><a href="./Support.html">Support</a></th>
+                <th><span class="footer-copyright">
+                        Medford Animal Rescue &copy; 2023</span></th>
+                <th><a>Adopt</a></th>
+                <th><a href="./Contact.html">Contact</a></th>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+
+</html>

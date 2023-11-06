@@ -1,0 +1,86 @@
+
+#er-def {
+    height: 200px;
+    width: 97%;
+    overflow-y: auto;
+    border-top: 1px solid #8995d6;
+    border-bottom: 1px solid #8995d6;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+#er-search, #er-text-save {
+    padding: 5px 25px;
+    width: fit-content;
+    margin-bottom: 0;
+}
+.main-table {
+    background-color: #8995d6;
+    color: white;
+    width: 50%;
+    border: 3px solid #20295b;
+    padding: 10px;
+    text-align: center;
+    margin-left: 225px;
+}
+textarea {
+    resize: vertical;
+    min-height: 325px;
+    width: 97%;
+    padding: 15px;
+    font-size: 16pt;
+    border-radius: 5px;
+    outline: none;
+    margin: 15px 0;
+}
+
+/* Styles for form er-premium popups */
+.er-premium-popup-wrapper,
+.er-premium-popup-dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.er-premium-popup-wrapper {
+    background-color: #FFFFFFA6;
+}
+.er-premium-popup-dialog {
+    width: fit-content;
+    max-width: 70%;
+    height: fit-content;
+    margin: auto;
+    border: 1px solid black;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+.er-premium-popup-label {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.er-premium-popup-label,
+.er-premium-popup-text {
+    padding: 5px;
+    display: block;
+}
+.er-premium-popup-wrapper hr {
+    margin-bottom: 0px;
+    border-top: 2px solid black;
+    width: 100%;
+    margin-left: 0px;
+}
+.er-premium-popup-btn {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+.er-premium-popup-btn:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
+}

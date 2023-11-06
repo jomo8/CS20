@@ -1,0 +1,31 @@
+/* For smaller widths: */
+@media (max-width: 1100px) {
+	/* Remove the 4th cat and dog from each row */
+	.pet-card:nth-child(4) {
+        display: none;
+    }
+    /* Avoid side banner image on adoption application */
+    .sideBanner {
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+	/* Remove the 3rd cat and dog from each row */
+	.pet-card:nth-child(3) {
+        display: none;
+    }
+    /* Use a bit more horizontal space */
+    .centered-div {
+        /* Need to be more important */
+        margin: 5% 5% !important;
+    }
+    .form-container {
+        margin: 25px 5% 80px 5% !important;
+    }
+
+    /* Reduce separation between footer items */
+    footer th a,
+    footer th .footer-copyright {
+        margin: 10px;
+    }
+}

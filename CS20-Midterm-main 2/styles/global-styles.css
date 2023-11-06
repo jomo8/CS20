@@ -1,0 +1,174 @@
+@import url('./responsive-styles.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cambria;
+}
+html {
+	/* Avoid different widths of h1 background image, etc. on longer pages */
+    overflow-y: scroll;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color:#e97b00;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+h3 {
+    font-size: 25px;
+}
+p {
+    font-size: 18px;
+}
+
+.centered-div {
+    margin: 5% 15%;
+}
+.space {
+    padding-top: 30px;
+}
+
+hr {
+    margin: 15px 0px;
+    border-top: solid 2px orange;
+    width: 10%;
+    margin-left: 45%;
+}
+
+/******* NAV BAR *********/
+nav {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+}
+nav img {
+    width: 250px;
+    margin: 25px 0 0 0;
+}
+.nav-links ul {
+    list-style: none;
+    display: inline-block;
+}
+.nav-links ul li {
+    float: left;
+    position: relative;
+    margin: 0 20px;
+    padding: 15px 20px;
+}
+.nav-links ul li a {
+    color: black;
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+}
+.nav-links ul li:hover > a {
+    border-bottom: 2px solid orange;
+    transition: .2s;
+}
+
+/* dropdown */
+.nav-links ul ul {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+	left: 0;
+    background-color:white;
+}
+.nav-links ul li:hover > ul {
+    display: block;
+    /* Bring in front of the gallery on the main page */
+    z-index: 2;
+}
+.nav-links ul ul li a {
+    background: white;
+    border-bottom: 2px solid white;
+}
+.nav-links ul ul li:hover a {
+    background: white;
+    border-bottom: 2px solid orange;
+}
+.nav-links ul ul li {
+    position: relative;
+    padding: 5px 10px 10px 10px;
+}
+
+.nav-links .curr-page-nav,
+.nav-links ul li a.curr-page-nav {
+    border-bottom: 2px solid orange;
+}
+
+/* * * * * * BUTTON * * * * * * * */
+.orange-button {
+    background-color: white;
+    color: orange;
+    border: solid 1px orange;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.orange-button:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: .2s;
+}
+.orange-button:hover {
+    cursor: pointer;
+}
+
+.orange-button:active {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    transition: .2s;
+}
+
+
+/* * * * * * * FOOTER * * * * * * */
+footer {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.2);
+	margin-top: 10px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+footer th, footer a {
+    margin: auto;
+    font-family: Oswald, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+footer a {
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    margin: 20px;
+    cursor: pointer;
+}
+
+footer a:hover {
+    background: #1c55b1b5;
+}
+.footer-copyright {
+    padding: 1px 5px 1px 5px;
+    border: solid;
+    border-width: thin;
+    font-size: 16px;
+    display: inline-block;
+    margin: 20px;
+}

@@ -1,0 +1,92 @@
+Organization name: Medford Animal Rescue
+(This is an organization/cause that relies on donations)
+
+https://www.eecs.tufts.edu/~dscher02/midterm/index.html
+Files -> 644
+Directories -> 755
+https://systems.eecs.tufts.edu/personal-web-space/
+
+
+[x] at least 7 pages (no more than 2 pages can be the same as others in the site
+– for example, a product catalog page)
+    1. index.html
+    2. About.html
+    3. Adopt.html
+    4. Cats.html
+    5. Contact.html
+    6. Dogs.html
+    7. Support.html
+[x] at least one external and one internal style sheet
+    * Contact.html loads `styles/global-styles.css`
+    * Contact.html has an internal style sheet
+[x] fixed page elements (navigation/header/footer) as appropriate per page
+    * Has a navigation header and footer on all pages
+[x] consistent look and feel across all pages
+    * All pages use similar styling
+[x] At least one use of an <ol> or <ul>
+    * Navbar on index.html uses <ul>
+[x] incorporates Javascript and jQuery
+    * `scripts/Gallery.js` (loaded on index.html) uses JavaScript
+    * `scripts/Pets.js` (loaded on Cats.html and Dogs.html) uses jQuery
+[x] includes a jQuery "special effect" (animation, fade, etc)
+    * `scripts/Pets.js` (loaded on Cats.html and Dogs.html) uses
+    `jQuery.fn.animate()`
+[x] includes a form with at least 3 different types of form elements not
+counting the Submit button
+    * The form on Adopt.html includes `<input>`, `<select>`, and `<textarea>`
+    (assuming this refers to different element; if it refers to different types
+    of `<input>` with different `type` attributes, Adopt.html has a form with
+    `<input>` elements with types `text` (name), `email`, `tel`, and `radio`)
+[x] Javascript validation of a form
+    * The form in Support.html is validated with `scripts/Volunteer-form.js`
+    that adds a check that at least one checkbox of each group is selected
+    (other forms have other validation)
+[x] includes at least two: Javascript array, function, DOM object
+    * `scripts/Gallery.js` (loaded on index.html) uses a Javascript array
+    (`imgURLs`), function (`afterFadeOut`) and DOM object (`toggleBtn`).
+[x] has images (at least one is a background image)
+    * Cats.html and Dogs.html include multiple images
+    * Contact.html includes a background image at the bottom
+[x] has meta keywords
+    * every page has <meta> with keywords
+[x] has at least (15) CSS rules
+    * `styles/global-styles.css` (loaded on all pages) has more than 15 rules
+[x] has one h1 on each page and uses h2 tags for subheadings
+    * index.html - exactly 1 <h1>, <h1>Medford Animal Rescue</h1>
+    * About.html - exactly 1 <h1>, <h1>About us</h1>
+    * Adopt.html - exactly 1 <h1>, <h1>Apply to adopt!</h1> 
+    * Cats.html - exactly 1 <h1>, <h1>Cats for adoption</h1>
+    * Contact.html - exactly 1 <h1>, <h1>Get in touch!</h1>
+    * Dogs.html - exactly 1 <h1>, <h1>Dogs for adoption</h1>
+    * Support.html - exactly 1 <h1>, <h1>Ways to give</h1>
+    Pages that need subheadings use <h2> tags, for example index.html
+[x] can click on site “logo” to return to home page
+    * On all pages the logo at the top of the navigation bar is a link to the
+    home page
+[x] at least one page must have multiple columns
+    * Cats.html has multiple columns
+[x] must be both responsive and mobile friendly - must pass this test:
+https://search.google.com/test/mobile-friendly 
+    * All pages load `styles/responsive-styles.css` (which is imported by
+    `styles/global-styles.css`) which adds responsiveness
+    * All pages pass the mobile-friendly test
+[x] works online
+    * Available at https://daniels6.github.io/CS20-Midterm/
+[x] no broken links
+[x] no "lorum ipsum" content
+
+
+Availability:
+Tuesday March 14: 1030-1130: Emily, Joey, Jacob <-- signed up
+
+
+* * * things that need to get done * * *
+All pages:
+    - responsiveness testing
+    - avoid inline styles
+    - remove anything that is commented out
+    - use the same footer everywhere
+
+Presentation script
+
+We will meet sunday at 3pm
