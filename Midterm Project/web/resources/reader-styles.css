@@ -1,0 +1,39 @@
+
+h1{
+    margin-top: 12px;
+    font-family: "Gill Sans", sans-serif;
+    color: #20295b;
+}
+
+#er-text-save{
+    background-color: #8995d6;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 575;
+    border-radius: 25px;
+    font-size: 18pt;
+}
+
+#er-search {
+    background-color: #8995d6;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 575;
+    border-radius: 25px;
+    font-size: 18pt;
+    
+}
+.main-table {
+    background-color: #8995d6;
+    color: white;
+    width: 50%;
+    border: 3px solid #20295b;
+    padding: 10px;
+    text-align: center;
+    margin-left: 225px;
+}
+textarea {
+    resize: vertical;
+    min-height: 300px;
+    width: 100%;
+    
+}
+

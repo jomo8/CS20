@@ -1,0 +1,121 @@
+html {
+    /* Avoid different widths on longer pages */
+    overflow-y: scroll;
+}
+body {
+    /* Allow scrolling down a bit, increase default font size */
+    padding-bottom: 150px;
+    font-size: 16pt;
+}
+a {
+    text-decoration: none;
+}
+.body-content-wrapper {
+    margin-left: 275px;
+    margin-right: auto;
+    width: 80%;
+}
+
+h1 {
+    /* Center headings */
+    text-align: center;
+}
+
+.side-nav {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #26316d;
+    box-shadow: 10px 0 15px -7px rgb(172, 172, 172);
+       
+    padding: 15px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.side-nav a{
+    color: white;
+}
+
+#upper-side-nav {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8995d6;
+
+}
+
+#er-search-history-div{
+    height: 350px;
+    overflow-y: auto;
+}
+
+#er-search-history-div::-webkit-scrollbar {
+    width: 8px; /* Set width of scrollbar */
+  }
+  
+  /* Track */
+#er-search-history-div::-webkit-scrollbar-track {
+    background: #20295b; /* Set color of scrollbar track */
+}
+/* Handle */
+#er-search-history-div::-webkit-scrollbar-thumb {
+    background: #6271c8; /* Set color of scrollbar handle */
+  }
+
+.er-history-term a {
+    padding:5px;
+    color:white;
+    /* border: 1px solid #8995d6; */
+    border-radius: 5px;  
+    margin-bottom:10px;
+    cursor:pointer;
+}
+.er-history-term a:hover{
+    background-color: #8995d6;
+}
+
+#er-profile {
+    border-top: 1px solid #8995d6;
+    margin-bottom: 50px; 
+}
+
+#er-imgProfile {
+    width: 35px;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+
+.er-navButton {
+    padding: 10px 0;
+    width: 220px;
+    margin-bottom: 10px;
+    background-color: #2d397f;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+
+    font-family: 'Times New Roman';
+    font-size:20px;
+    cursor:pointer;
+}
+.er-navButton:hover {
+    background-color: #6171c9;
+}
+.er-logo {
+    max-width: 100px;
+
+    display: block;
+    margin: 15px auto 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.oc-error {
+    color: red;
+}
