@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Gill Sans", Arial, Helvetica, sans-serif;
+}
+html {
+    /* Avoid different widths on longer pages */
+    overflow-y: scroll;
+}
+body {
+    /* Increase default font size */
+    font-size: 16pt;
+}
+::selection {
+    background: #b1b8e3;
+}
+a {
+    text-decoration: none;
+}
+.body-content-wrapper {
+    margin-left: 30%;
+    margin-right: auto;
+    width: 60%;
+}
+
+h1 {
+    /* Center headings */
+    text-align: center;
+    margin: 20px;
+    color: #20295b;
+}
+
+
+#er-search-history-div {
+    height: 350px;
+    padding-top: 10px;
+    /* auto -> only show up when needed, so not on non-premium pages */
+    overflow-y: auto;
+}
+
+#er-term-history-label {
+    display: block;
+    text-align: center;
+}
+
+.er-history-term span {
+    display: inline-block;
+    width: 85%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: 1px solid #6271c8;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.er-history-term a:hover {
+    background-color: #6271c8;
+}
+
+#er-profile {
+    border-top: 1px solid #8995d6;
+    margin-bottom: 50px;
+}
+
+#er-profLine {
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#er-profEmail {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    font-size: 13pt;
+}
+
+#er-imgProfile {
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.side-nav {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #26316d;
+    box-shadow: 10px 0 15px -7px rgb(172, 172, 172);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15pt;
+}
+
+.side-nav a {
+    color: white;
+}
+
+#upper-side-nav {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8995d6;
+}
+
+.er-navButton {
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #2d397f;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    font-size: 13pt;
+    cursor: pointer;
+}
+.er-navButton:hover {
+    background-color: #6171c9;
+}
+
+.er-logo {
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+#er-signupButton {
+    font-size: 11pt;
+    float: right;
+    margin-right: 7%;
+    text-decoration: underline;
+}
+
+#er-signupButton:hover {
+    color: #b1b8e3;
+}
+
+.er-error {
+    color: red;
+}
