@@ -1,0 +1,49 @@
+.big-text.contact {
+    opacity: 1;
+    color: #E3D7F1;
+    text-shadow: 5px 5px 20px #290637;
+    padding-left: 5vw;
+    padding-bottom: 3vh;
+    margin-left: -5vw;
+    margin-bottom: -3vh;
+    top: 58vh;
+    left: 11vw;
+    animation: move-projects 2s forwards;
+    transition: opacity 0.3s ease;
+    padding-top: 3vw;
+}
+
+@keyframes move-projects {
+    100% {
+      transform: translateX(15%);
+      top: 0;
+    }
+}
+
+.big-text.contact.active {
+    opacity: 0;
+}
+
+.small-text.contact {
+    opacity: 0;
+    top: 10%;
+    max-width: 100%;
+    animation: fadeIn 1s 1.5s forwards; /* duration | delay */
+    transition: margin-top 1s;
+}
+
+#contact.center-box {
+    display: grid;
+    transition: opacity 1s ease;
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+

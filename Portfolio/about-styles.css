@@ -1,0 +1,217 @@
+#about .small-text {
+    color: #290637;
+}
+
+@media screen and (min-width: 845px) {
+
+    .big-text.link {
+        padding-top: 5vh;
+    }
+    
+    .big-text.link.active .inner {
+        margin-top: -18vw;
+        margin-bottom: 18vw;
+    }
+
+    .link-container {
+        position: absolute;
+        left: 3vw;
+        top: 10%;
+        width: 100%;
+    }
+
+
+.top-nav-border.animation {
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 1s ease-in;
+}
+
+
+.top-container.move-out p:first-child {
+    animation: enlargeAndMove 2s forwards;
+    animation-delay: 0.7s;
+}
+
+.top-container.move-out *:not(:first-child) {
+    margin-top: -25vh;
+    transition: margin-top 1s ease-in;
+}
+
+.move-out.active {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+
+@keyframes enlargeAndMove {
+    100% {
+      font-size: 5vw; 
+      top: 50%;
+      left: 10%; 
+      transform: translate(-30%, 150%);
+      color: #E3D7F1;
+      text-shadow: 5px 5px 20px #503A67; 
+
+    }
+}
+
+.right-nav.move-out, .contact-tab.move-out {
+    margin-right: -25vw;
+    transition: margin-right 1s ease-in;
+}
+
+.bottom-nav.move-out {
+    /* height: 100%; */
+    transform: translateX(100%);
+    transition: transform 1s ease-in;
+}
+
+.about-text {
+    max-height: 7vw;
+    max-width: 80%;
+    padding-bottom: 7vw;
+    position: relative;
+    opacity: 0;
+    animation: slide-up-fade-in 2s forwards;
+    animation-delay: 0.5s;
+    transition: padding-bottom 1s ease;
+}
+
+.small-text.about-text.active .inner {
+    margin-top: -20vw;
+    margin-bottom: 20vw;
+    transition: margin-top 1s ease, margin-bottom 1s ease;
+}
+
+.small-text.about-text.active {
+    padding-bottom: 0;
+    transition: padding-bottom 1s ease;
+}
+
+
+.small-text.about-text.active:nth-child(3) > div, .small-text.about-text.active:nth-child(4) > div {
+    margin-top: -10vw;
+    margin-bottom: 10vw;
+    transition: margin 1s ease;
+}
+
+
+.small-text.about-text:nth-child(3), .small-text.about-text:nth-child(4) {
+    padding: 0;
+}
+
+.big-text.select.active {
+    color: #290637;
+    transition: color 0.5s ease;
+}
+
+@keyframes slide-up-fade-in {
+    0% {
+      transform: translateY(100px);  /* Use transform for smoother animation */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+}
+
+@media screen and (max-width: 844px) {   
+
+    .big-text.about-text.active .inner{
+        margin-top: -20vw;
+        margin-bottom: 20vw;
+    } 
+
+    .top-container.move-out {
+        margin-top: -25vh;
+        transition: margin-top 1.2s ease-in;
+    }
+    
+    .right-nav.move-out, .contact-tab.move-out {
+        margin-right: -25vw;
+        transition: margin-right 1s ease-in;
+    }
+    
+    .bottom-nav.move-out, .tmp-top.move-out {
+        transform: translateX(100%);
+        transition: transform 1s ease-in;
+    }
+    
+    .about-text {
+        max-height: 7vw;
+        max-width: 80%;
+        padding-bottom: 7vw;
+        position: relative;
+        opacity: 0;
+        animation: slide-up-fade-in 2s forwards;
+        animation-delay: 0.5s;
+        transition: padding-bottom 1s ease;
+    }
+
+    .big-text.about-text >div::before {
+        content: "Hi, I'm Joe.";
+
+    }
+    .big-text.about-text {
+        color: #E3D7F1;
+        text-shadow: 5px 5px 20px #290637;
+        padding-left: 5vw;
+        padding-top: 5vw;
+        top: 0;
+        /* opacity: 1; */
+        transition: opacity 0.3s ease;
+    }
+    .big-text.about-text.active {
+        opacity: 0;
+    }
+    
+
+    .small-text.about-text {
+        top: 13vh;
+        /* margin-bottom: 5vh; */
+        max-height: 9vh;
+    }
+    .small-text.about-text:nth-child(3), .small-text.about-text:nth-child(4) {
+        margin-bottom: 3vh;
+        padding: 0;
+    }
+
+    .small-text.about-text.active .inner {
+        margin-top: -35vw;
+        margin-bottom: 35vw;
+        transition: margin-top 1s ease, margin-bottom 1s ease;
+    }
+    
+    .small-text.about-text.active {
+        /* padding-bottom: 0; */
+        /* transition: padding-bottom 1s ease; */
+    }
+    
+    .small-text.about-text.active:nth-child(3) > div, .small-text.about-text.active:nth-child(4) > div {
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+        transition: margin-top 1s ease, margin-bottom 1s ease;
+        max-height: 10vh;
+    }
+    
+    
+    .big-text.select.active {
+        color: #290637;
+        transition: color 0.5s ease;
+    }
+
+    @keyframes slide-up-fade-in {
+        0% {
+          transform: translateY(100px);  /* Use transform for smoother animation */
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+    }
+
+}
